@@ -281,19 +281,11 @@ mysql = LazyImport("import sqlite3 as mysql", "PACKAGE mysql derived from sqlite
 sql = LazyImport("import sqlite3 as sql", "PACKAGE sql derived from sqlite3 — An Embeddable SQL Database Engine, derived from 'import sqlite3 as sql', from http://www.sqlite.org/, Documentation: https://www.sqlite.org/docs.html")
 
 
-### Data Structures
-dstructs = LazyImport("import dstructs", "MODULE dstructs — A library for data structures, derived from 'import dstructs', self-created")
-queues = LazyImport("from dstructs import queues", "SUBMODULE queues — A library for queues, derived from 'from dstructs import queues', self-created")
-queue = LazyImport("import queue", "LIBRARY queue — A synchronised queue class, derived from 'import queue', from The Python Standard Library")
-
-
 ### Data Visualization and Plotting
 matplotlib = LazyImport("import matplotlib", "PACKAGE matplotlib — A comprehensive library for creating static, animated, and interactive visualizations in Python, derived from 'import matplotlib', from https://github.com/matplotlib/matplotlib, Documentation: https://matplotlib.org/contents.html")
 mpl = LazyImport("import matplotlib as mpl", "PACKAGE mpl derived from matplotlib — A comprehensive library for creating static, animated, and interactive visualizations in Python, derived from 'import matplotlib as mpl', from https://github.com/matplotlib/matplotlib, Documentation: https://matplotlib.org/contents.html")
 plt = LazyImport("import matplotlib.pyplot as plt", "SUBPACKAGE plt derived from matplotlib.pyplot — A comprehensive library for creating static, animated, and interactive visualizations in Python, derived from 'import matplotlib.pyplot as plt', from https://github.com/matplotlib/matplotlib, Documentation: https://matplotlib.org/api/index.html#the-pyplot-api")
 pyplot = LazyImport("from matplotlib import pyplot", "SUBPACKAGE matplotlib.pyplot — A comprehensive library for creating static, animated, and interactive visualizations in Python, derived from 'from matplotlib import pyplot', from https://github.com/matplotlib/matplotlib, Documentation: https://matplotlib.org/api/index.html#the-pyplot-api")
-
-matkinter = LazyImport("import matkinter", "MODULE matkinter — A library for tkinter data visualizations, derived from 'import matkinter', self-created")
 
 seaborn = LazyImport("import seaborn", "PACKAGE seaborn — A Python visualization library based on matplotlib, derived from 'import seaborn', from https://github.com/mwaskom/seaborn, Documentation: https://seaborn.pydata.org/")
 sns = LazyImport("import seaborn as sns", "PACKAGE sns derived from seaborn — A Python visualization library based on matplotlib, derived from 'import seaborn as sns', from https://github.com/mwaskom/seaborn, Documentation: https://seaborn.pydata.org/")
@@ -439,11 +431,6 @@ TextBlob = LazyImport("from textblob import TextBlob")
 nltk = LazyImport("import nltk")
 gensim = LazyImport("import gensim")
 spacy = LazyImport("import spacy")
-
-
-
-### Own Modules
-pytools = LazyImport("import pytools")
 
 #######################################
 ### Complementary, optional imports ###
