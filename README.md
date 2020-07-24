@@ -67,3 +67,5 @@ It is based on the [pyforest module](https://github.com/8080labs/pyforest/).
 - nltk
 - gensim
 - spacy
+
+The program runs even if one of them is not installed, but the functions for packages uninstalled will not work.
