@@ -1,11 +1,11 @@
-from setuptools import setup, find_packages
+from setuptools import setup, find_namespace_packages
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
     
 setup(
-    name="forest", # Replace with your own username
-    packages = ['forest'],
+    name="forestpy", # Replace with your own username
+    packages = ['forest']+list(find_namespace_packages(include=['forest.*'])),
     version="0.1",
     author="ThePyProgrammer",
     author_email="prannayagupta@gmail.com",
@@ -19,10 +19,8 @@ setup(
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
-        'Development Status :: 3 - Alpha',      # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
-        'Intended Audience :: Developers',      # Define that your audience are developers
-        'Topic :: Software Development :: Build Tools',
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.6',
 )
+
