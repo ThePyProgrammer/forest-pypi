@@ -5,7 +5,8 @@ with open("README.md", "r") as fh:
     
 setup(
     name="forest", # Replace with your own username
-    version="1.0",
+    packages = ['forest'],
+    version="0.1",
     author="ThePyProgrammer",
     author_email="prannayagupta@gmail.com",
     description="A data science and machine learning library made by me using codes found online. It is based on the pyforest module.",
@@ -13,7 +14,7 @@ setup(
     long_description_content_type="text/markdown",
     license="MIT",
     url="https://github.com/ThePyProgrammer/forest",
-    packages=find_packages(),
+    download_url = 'https://github.com/ThePyProgrammer/forest/archive/v_01.tar.gz', 
     install_requires=['pandas', 'numpy', 'np'], #external packages as dependencies
     classifiers=[
         "Programming Language :: Python :: 3",
