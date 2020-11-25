@@ -2,7 +2,7 @@ from pathlib import Path
 
 
 IPYTHON_STARTUP_FOLDER = Path.home() / ".ipython" / "profile_default" / "startup"
-STARTUP_FILE = IPYTHON_STARTUP_FOLDER / "forest_autoimport.py"
+STARTUP_FILE = IPYTHON_STARTUP_FOLDER / "pyforest_autoimport.py"
 
 
 def _create_or_reset_startup_file():
@@ -19,12 +19,13 @@ def _write_into_startup_file():
         file.write(
             f"""
 # HOW TO DEACTIVATE AUTO-IMPORT:
-# if you dont want to auto-import forest, you have two options:
+# if you dont want to auto-import pyforest, you have two options:
 # 0) if you only want to disable the auto-import temporarily and activate it later,
 #    you can uncomment the import statement below
 # 1) if you never want to auto-import pyforest again, you can delete this file
+
 try:
-    from forest import *  # uncomment this line if you temporarily dont want to auto-import pyforest
+    from pyforest import *  # uncomment this line if you temporarily dont want to auto-import pyforest
     pass
 except:
     pass
@@ -43,6 +44,6 @@ def setup():
     _write_into_startup_file()
 
     print(
-        "Success: forest is now available in Jupyter Notebook, Jupyter Lab and IPython because it was added to the IPython auto import"
+        "Success: pyforest is now available in Jupyter Notebook, Jupyter Lab and IPython because it was added to the IPython auto import"
     )
     return True

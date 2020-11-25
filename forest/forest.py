@@ -1,5 +1,5 @@
 import scipy.optimize as op
-from ._imports import *
+from .lazy import *
 
 def sigmoid(z):
     return 1/(1 + np.exp(-z));

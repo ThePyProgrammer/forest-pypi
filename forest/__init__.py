@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
+#from .forest import *
+#from .forestdata import *
+from .lazy import *
 
-from .forest import *
-from .forestdata import *
-
-from ._imports import *
 
 #  set __version__ attribute
 from pkg_resources import get_distribution, DistributionNotFound
